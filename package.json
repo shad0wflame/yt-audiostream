@@ -1,0 +1,23 @@
+{
+  "name": "yt-audiostream",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.16.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shad0wflame/yt-audiostream.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shad0wflame/yt-audiostream/issues"
+  },
+  "homepage": "https://github.com/shad0wflame/yt-audiostream#readme"
+}

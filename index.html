@@ -1,0 +1,19 @@
+<html>
+	<audio id="audio" controls></audio>
+	
+	<script>
+		const audio = document.getElementById('audio');
+		audio.onended = () => {
+			console.log('It ended!');
+		};
+
+		fetch('http://localhost:3000/audio', { method: "GET" }).then(response => {
+			console.log(response);
+			const blob = new Blob([response.body], { type: 'audio/webm' });
+			const url = window.URL.createObjectURL(blob);
+			//console.log(url);
+			audio.src = url;
+		}).catch(err => console.error(err));
+
+	</script>
+</html>
